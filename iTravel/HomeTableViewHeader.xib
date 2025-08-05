@@ -14,9 +14,8 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dh2-E6-6gA" userLabel="Header View">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dh2-E6-6gA" userLabel="Header View">
                     <rect key="frame" x="0.0" y="0.0" width="393" height="250"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iTravel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2A-XS-13L">
                             <rect key="frame" x="31" y="37" width="72" height="33"/>
@@ -28,26 +27,45 @@
                         </label>
                     </subviews>
                     <color key="backgroundColor" red="0.11764705882352941" green="0.23137254901960785" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="U6O-3T-zWy"/>
+                    </constraints>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FID-KU-c6G" userLabel="Banner View">
-                    <rect key="frame" x="21" y="120" width="350" height="180"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FID-KU-c6G" userLabel="Banner View">
+                    <rect key="frame" x="21" y="130" width="350" height="130"/>
                     <subviews>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="spK-lt-hdD">
-                            <rect key="frame" x="0.0" y="0.0" width="200" height="180"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spK-lt-hdD">
+                            <rect key="frame" x="0.0" y="0.0" width="186.66666666666666" height="130"/>
                             <color key="backgroundColor" red="0.31764705882352939" green="0.70196078431372544" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </view>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V83-vL-g6v">
-                            <rect key="frame" x="199" y="0.0" width="151" height="180"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V83-vL-g6v">
+                            <rect key="frame" x="186.66666666666663" y="0.0" width="163.33333333333337" height="130"/>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="spK-lt-hdD" firstAttribute="top" secondItem="FID-KU-c6G" secondAttribute="top" id="R8I-Pd-PT1"/>
+                        <constraint firstItem="spK-lt-hdD" firstAttribute="width" secondItem="FID-KU-c6G" secondAttribute="width" multiplier="0.533333" id="VaZ-2Q-Nox"/>
+                        <constraint firstAttribute="bottom" secondItem="V83-vL-g6v" secondAttribute="bottom" id="XFz-Zc-0Kt"/>
+                        <constraint firstItem="V83-vL-g6v" firstAttribute="width" secondItem="FID-KU-c6G" secondAttribute="width" multiplier="0.466667" id="a9u-8W-PLV"/>
+                        <constraint firstAttribute="height" constant="130" id="ihR-5t-Zjo"/>
+                        <constraint firstAttribute="trailing" secondItem="V83-vL-g6v" secondAttribute="trailing" id="kFY-jd-JjF"/>
+                        <constraint firstAttribute="bottom" secondItem="spK-lt-hdD" secondAttribute="bottom" id="l2W-WD-vUI"/>
+                        <constraint firstItem="V83-vL-g6v" firstAttribute="top" secondItem="FID-KU-c6G" secondAttribute="top" id="mQK-tw-WOL"/>
+                        <constraint firstItem="spK-lt-hdD" firstAttribute="leading" secondItem="FID-KU-c6G" secondAttribute="leading" id="uSS-1G-mOR"/>
+                    </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="dh2-E6-6gA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="KR0-hv-h18"/>
+                <constraint firstItem="dh2-E6-6gA" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="X07-sC-0G0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FID-KU-c6G" secondAttribute="trailing" constant="22" id="bBz-6K-Kh7"/>
+                <constraint firstItem="dh2-E6-6gA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kSS-gY-76M"/>
+                <constraint firstItem="FID-KU-c6G" firstAttribute="bottom" secondItem="dh2-E6-6gA" secondAttribute="bottom" constant="10" id="oeD-MF-p1g"/>
+                <constraint firstItem="FID-KU-c6G" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="21" id="zaC-Mm-AOz"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="bannerImageView" destination="V83-vL-g6v" id="3gr-1S-gSk"/>
